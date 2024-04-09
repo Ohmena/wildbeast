@@ -18,6 +18,27 @@
   background-color: var(--main-color);
 }
 
+.js [data-menu="content"] {
+  display: none;
+  margin-bottom: 30px;
+}
+
+[data-menu="content"].active {
+  display: block;
+  animation: animationAnimals .5s forwards;
+}
+
+@keyframes animationAnimals {
+  from {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0 , 0);
+  }
+}
+
 @keyframes animationArrow {
   from {
     transform: translateX(-20px);
