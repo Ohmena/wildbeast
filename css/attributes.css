@@ -43,6 +43,7 @@
 @media (max-width: 700px) {
   .attributes-section {
     grid-template-columns: 1fr;
+    margin-bottom: 0;
   }
   .announcements {
     flex-direction: row;

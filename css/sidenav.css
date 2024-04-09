@@ -18,6 +18,15 @@
   background-color: var(--main-color);
 }
 
+@keyframes animationArrow {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 1200px) {
   aside {
     grid-row: 3;
@@ -30,12 +39,21 @@
     grid-column: 1/-1;
     overflow-x: auto;
   }
+  .side-nav::before {
+    content: "⭢";
+    display: block;
+    width: 100%;
+    text-align: end;
+    font-size: 1.875rem;
+    animation: animationArrow .5s ease-in infinite;
+    opacity: 0.3;
+  }
   .side-nav ul{
     display: flex;
-    gap: 10px;
+    gap: 20px;
   }
   .side-nav ul li {
-    padding: 10px;
+    flex: 1;
   }
   .side-nav ul li a {
     padding: 10px;
