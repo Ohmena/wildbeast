@@ -1,0 +1,48 @@
+.side-nav ul li {
+  margin-bottom: 20px;
+}
+
+.side-nav ul li a {
+  display: block;
+  min-width: 60px;
+  max-width: 160px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  transition: .3s;
+}
+
+.side-nav ul li a:hover {
+  background-color: var(--main-color);
+}
+
+@media (max-width: 1200px) {
+  aside {
+    grid-row: 3;
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .side-nav {
+    grid-column: 1/-1;
+    overflow-x: auto;
+  }
+  .side-nav ul{
+    display: flex;
+    gap: 10px;
+  }
+  .side-nav ul li {
+    padding: 10px;
+  }
+  .side-nav ul li a {
+    padding: 10px;
+  }
+  aside {
+    grid-column: 1/-1;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+}

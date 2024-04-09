@@ -1,0 +1,9 @@
+:root {
+  --main-bg: linear-gradient(135deg, #8844ee, #b07dfb);
+  --main-color: #b07dfb;
+}
+
+.main-color {
+  color: var(--main-color);
+}
+

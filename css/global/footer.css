@@ -1,0 +1,6 @@
+.footer-bg {
+  background: var(--main-bg);
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+}

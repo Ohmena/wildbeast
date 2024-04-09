@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.shadow {
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+}
+
+/* the main grid of the page, which contains side-nav, the main section and aside */
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+}
+
+@media (max-width: 1200px) {
+  .main-grid {
+    grid-template-columns: minmax(160px, 1fr) 3fr;
+  }
+}

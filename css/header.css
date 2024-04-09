@@ -1,0 +1,33 @@
+.header {
+  background: var(--main-bg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+
+.header img {
+  width: 100%;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-nav li a {
+  display: block;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.header-nav li a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
